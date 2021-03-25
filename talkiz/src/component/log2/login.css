@@ -1,0 +1,195 @@
+.main{
+  background-image: url("../testpic/pexels-eberhard-grossgasteiger-534164.jpg");
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contaner{
+    height: 700px;
+    width: 400px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.281);
+    min-width: 700dp;
+    min-height: 400dp;
+    border-radius: 5px;
+    margin: 125px 0 0 1300px;
+    background:rgb(33, 88, 31);
+    opacity: 0.8;
+}
+
+.body {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    font-size: 60px;
+    color: rgb(3, 0, 17);
+    margin-top: 70px;
+    margin-left: -40px;
+    padding-top: 35px;
+    opacity: 10;
+    font-family: "Georgia", Times, serif;
+    font-weight: 500;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    width: fit-content;
+    height: 250px;
+    width: 300px;
+    margin-top: 60px;
+    margin-left: 40px;
+    opacity: 1;
+}
+
+label{
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: "Georgia", Times, serif;
+    opacity: 1;
+    font-weight: 500;
+}
+input{
+    opacity: 1;
+    margin-top: 10px;
+    min-width: 270px;
+    height: 40px;
+    padding: 0px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-bottom: 31px;
+    transition: all 250ms ease-in-out;
+    outline: none;
+    box-shadow: 0px 0px 12px 0.8px #adfc9db2;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 500;
+
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    width: fit-content;
+    margin-top: 40px;
+    margin-left: 100px;
+    opacity: 1;
+    font-weight: 500;
+}
+
+button {
+    min-width: 170px;
+    height: 45px;
+    padding: 0px 10px;
+    font-size: 22px;
+    background-color: #9cce6e;
+    border: 0;
+    border-radius: 4px;
+    transition: all 250ms ease-in-out;
+    outline: none;
+    box-shadow: 0px 0px 12px 0.8px #60e760b2;
+    font-family: "Times New Roman", Times, serif;
+}
+/*for 6inch phones*/
+@media(max-width:600px){
+    .contaner{
+        height: 550px;
+        width: 300px;
+        margin: 40px 0 0 60px;
+    }
+
+    .header{
+        margin-top: 100px;
+        margin-left: -30px;
+        padding-top: 35px;
+    }
+
+    .form{
+        margin-top: 55px;
+        margin-left: 30px;
+    }
+    .btn{
+        margin-top: 0px;
+        margin-left: 80px;
+    }
+}
+/*for 5inch phone*/
+@media(max-width:400px){
+    .contaner{
+        height: 450px;
+        width: 260px;
+        margin-left: 55px;
+        margin-top: -60px;
+    }
+
+    .header{
+        margin-left: -10px;
+        padding-top: 5px;
+    }
+
+    .form{
+        margin-top: 35px;
+        margin-left: 10px;
+    }
+    .btn{
+        margin-top: -30px;
+        margin-left: 65px;
+    }
+}
+
+/*for desktop mode in phones*/
+@media(max-width:1200px){
+    .contaner{
+        height: 1250px;
+        width: 700px;
+        margin-left: 130px;
+        margin-top: 200px;
+    }
+
+    .header{
+        margin-left: -30px;
+        padding-top: 150px;
+        font-size: 100px;
+    }
+
+    .form{
+        height: 600px;
+        width: 500px;
+        margin-top: 140px;
+        margin-left: 30px;
+        font-size: 50px;
+    }
+
+
+label{
+    font-size: 80px;
+    margin-bottom: 30px;
+    font-family: "Georgia", Times, serif;
+}
+input{
+    min-width: 600px;
+    height: 77px;
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+    .btn{
+        margin-top: -80px;
+        margin-left: 140px;
+    }
+button{
+    min-width: 350px;
+    height: 86px;
+    font-size: 55px;
+}
+}
