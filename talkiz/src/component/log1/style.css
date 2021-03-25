@@ -1,0 +1,79 @@
+.contaner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    padding: 10px;
+    font-family: "Georgia", Times, serif;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 10db;
+    height: 10db;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    animation: App-logo-spin infinite 20s linear;
+    pointer-events: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+}
+
+label {
+    font-size: 20px;
+    padding: 5px;
+    font-family: "Georgia", Times, serif;
+}
+
+input {
+    margin-top: 6px;
+    min-width: 10em;
+    height: 37px;
+    padding: 0px 10px;
+    font-size: 16px;
+    background-color: #a5f580;
+    border-radius: 4px;
+    margin-bottom: 31px;
+    transition: all 250ms ease-in-out;
+    outline: none;
+    box-shadow: 0px 0px 12px 0.8px #62aaeeb2;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.footer {
+    margin-top: 3em;
+}
+
+button {
+    margin-top: 2px;
+    min-width: 8em;
+    height: 40px;
+    padding: 0px 10px;
+    font-size: 16px;
+    background-color: #8f88ee;
+    border: 0;
+    border-radius: 4px;
+    margin-bottom: 31px;
+    transition: all 250ms ease-in-out;
+    outline: none;
+    box-shadow: 0px 0px 12px 0.8px #d3a31eb2;
+    font-family: "Times New Roman", Times, serif;
+}
