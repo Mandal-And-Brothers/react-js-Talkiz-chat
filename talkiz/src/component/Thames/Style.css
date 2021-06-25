@@ -1,0 +1,270 @@
+.main {
+    background-image: url("../images/background.jpg");
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.contaner {
+    display: block;
+    height: 700px;
+    width: 400px;
+    box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.281);
+    border-radius: 5px;
+    margin: 90px 0 0 1200px;
+    background: linear-gradient(to right top, #77f0da, #6cdbeb);
+    opacity: 0.6;
+}
+
+.header {
+    font-size: 60px;
+    color: rgb(9, 1, 44);
+    margin-top: 70px;
+    margin-left: 100px;
+    padding-top: 25px;
+    opacity: 10;
+    font-family: "Georgia", Times, serif;
+    font-weight: 500;
+}
+
+/*......................................css for login Page.....................................*/
+
+.form {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    width: fit-content;
+    height: 250px;
+    width: 250px;
+    margin-top: 30px;
+    margin-left: 40px;
+    opacity: 1;
+}
+
+.btn {
+    width: fit-content;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.forgt {
+    margin-bottom: 20px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.reg {
+    margin-top: 10px;
+    margin-left: -40px;
+    width: 270px;
+}
+
+.lbl {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: rgb(9, 1, 44);
+    font-family: "Georgia", Times, serif;
+    opacity: 1;
+}
+
+/*......................................css for register Page.....................................*/
+
+.form1 {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    width: fit-content;
+    height: 190px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 40px;
+    opacity: 1;
+}
+
+input {
+    opacity: 1;
+    margin-top: 20px;
+    min-width: 270px;
+    height: 40px;
+    padding: 0px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-bottom: 31px;
+    transition: all 250ms ease-in-out;
+    outline: none;
+    box-shadow: 0px 0px 12px 0.8px #adfc9db2;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 500;
+}
+
+.select {
+    margin-top: 20px;
+    min-width: 294px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-bottom: 31px;
+    outline: none;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.btn1 {
+    width: fit-content;
+    margin-top: 230px;
+    margin-left: 100px;
+}
+
+button {
+    width: 170px;
+    height: 45px;
+    padding: 0px 10px;
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-right: 80px;
+    background-color: #011836;
+    color: rgb(239, 239, 243);
+    border: 0;
+    border-radius: 4px;
+    transition: all 250ms ease-in-out;
+    outline: none;
+    box-shadow: 0px 0px 12px 0.8px #60e760b2;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/*......................................css for Reset Page.....................................*/
+
+.re-contaner {
+    display: block;
+    height: 250px;
+    width: 450px;
+    box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.281);
+    border-radius: 5px;
+    margin: 200px 0 0 1050px;
+    background: linear-gradient(to right top, #77f0da, #6cdbeb);
+    opacity: 0.6;
+    padding-top: 40px;
+    padding-right: 30px;
+}
+
+.re-form {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    width: fit-content;
+    margin-left: 85px;
+    opacity: 1;
+}
+
+.re-lbl {
+    font-size: 20px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-weight: 100;
+    color: rgb(9, 1, 44);
+    font-family: "Georgia", Times, serif;
+}
+
+.re-btn {
+    display: flex;
+    width: fit-content;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+/*for 6inch phones*/
+
+@media(max-width:600px) {
+    /*..............................login page...........................................*/
+    .main {
+        background: linear-gradient(to right top, #77f0da, #6cdbeb);
+    }
+    .contaner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 600px;
+        width: 350px;
+        box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.281);
+        border-radius: 5px;
+        opacity: 0.6;
+        margin-left: 30px;
+        margin-top: 60px;
+    }
+    .header {
+        font-size: 50px;
+        color: rgb(9, 1, 44);
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-top: 20px;
+        opacity: 1;
+        font-family: "Georgia", Times, serif;
+        font-weight: 500;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        height: 240px;
+        width: 250px;
+        margin-top: 50px;
+        margin-left: 10px;
+        padding-top: 10px;
+        opacity: 1;
+    }
+    .form input{
+        min-width: 10px;
+    }
+    .lbl {
+        font-size: 20px;
+        color: rgb(9, 1, 44);
+        font-family: "Georgia", Times, serif;
+
+    }
+    .btn {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 200px;
+        margin-left: 110px;
+        margin-top: 10px;
+    }
+    .forgt{
+        margin-bottom: 20px;
+        margin-left: -10px;
+        font-size: 24px;
+    }
+    /*..............................login page...........................................*/
+    .form1 {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: 250px;
+        margin-top: 10px;
+        margin-left: 5px;
+        padding-top: 10px;
+        opacity: 1;
+    }
+    .form1 input{
+        min-width: 10px;
+    }
+    .select {
+        margin-top: 20px;
+        min-width: 230px;
+        height: 40px;
+        font-size: 16px;
+        outline: none;
+        font-family: "Times New Roman", Times, serif;
+    }
+    .btn1 {
+        width: fit-content;
+        margin-top: 0px;
+        margin-left: 120px;
+    }
+    .btn1 button{
+        font-size: 19px;
+    }
+}
+

@@ -1,0 +1,255 @@
+/*........................css for User page..........................*/
+
+.usermain {
+    height: 100vh;
+    background: linear-gradient(to right top, #77f0da, #6cdbeb);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user-header {
+    background: white;
+    min-height: 7vh;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4));
+    border-radius: 1.5rem;
+}
+
+.user-container {
+    min-height: 87vh;
+    width: 93%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+
+.sidebar {
+    min-height: 97%;
+    width: 20%;
+    margin-left: 25px;
+    margin-right: 10px;
+    border-radius: 1.5rem;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
+}
+
+.content {
+    min-height: 97%;
+    width: 76.5%;
+    margin-left: 10px;
+    border-radius: 1.5rem;
+    background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
+}
+
+/*.......................css for User header page...................*/
+
+.UserHeader-main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.Logo {
+    min-height: 20px;
+    min-width: 65px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 40px;
+    padding-left: 15px;
+    margin-left: 100px;
+    background: black;
+    opacity: 0.85;
+    border-radius: 0.5rem;
+}
+
+.header-name {
+    font-size: 40px;
+    font-family: Georgia, serif;
+    color: black;
+    opacity: 0.8;
+    font-weight: bold;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.search-div {
+    height: 45px;
+    width: 400px;
+    margin-left: 100px;
+    display: flex;
+}
+
+.header-search {
+    border-radius: 0.8rem;
+    margin-top: 0px;
+    opacity: 0.8;
+    font-family: "Times New Roman", Times, serif;
+    box-shadow: 0px 0px 12px 0.8px #adfc9db2;
+    background: #6cdbeb;
+    margin-right: 10px;
+}
+
+.button-search {
+    border-radius: 0.8rem;
+    opacity: 0.8;
+    min-width: 100px;
+}
+
+nav {
+    height: 40px;
+    margin-left: 50px;
+    margin-top: 0px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-right: 50px;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.header-profile {
+    min-height: 50px;
+    min-width: 50px;
+    background: salmon;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+Link{
+    text-decoration: none;
+    
+}
+
+/*...........css for dropdown button in user page........................*/
+
+.dropdown {
+    height: 50px;
+    width: 50px;
+    margin-left: 7px;
+}
+
+.dropbtn {
+    background: none;
+    color: black;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    border: none;
+    margin-top: 15px;
+    transform: rotate(90deg);
+    box-shadow: 0px 8px 16px 0px #adfc9db2;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #6cdbeb;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    color: black;
+    padding: 12px 0px;
+    margin-left: -20px;
+    text-decoration: none;
+    display: block;
+    list-style: none;
+    text-decoration: none;
+}
+
+.dropdown-content li:hover {
+    background-color: #6cdbeb;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(98, 98, 236);
+}
+
+/*..........................css for add friend page.........................*/
+.add-content {
+    min-height: 97%;
+    width: 76.5%;
+    display: flex;
+    margin-left: 10px;
+    border-radius: 1.5rem;
+    background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
+    align-items: center;
+    flex-direction: column;
+}
+
+.add-search-div{
+    height: 10vh;
+    margin-top: 200px;
+}
+
+.add-search-div button{
+    border-radius: 0.8rem;
+    opacity: 0.8;
+    min-width: 100px;
+}
+
+.add-search-div input{
+    border-radius: 0.8rem;
+    margin-top: 0px;
+    opacity: 0.8;
+    font-family: "Times New Roman", Times, serif;
+    box-shadow: 0px 0px 12px 0.8px #adfc9db2;
+    background: #6cdbeb;
+}
+
+.add-result{
+    height: 30vh;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-add-result{
+    height: 30vh;
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-pic{
+    background: chartreuse;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.detail-container{
+    background: chartreuse;
+    height: 22vh;
+    width: 400px;
+}
+
+.detail-container label{
+    background:white;
+}
+
+.add-result button{
+    border-radius: 0.8rem;
+    opacity: 0.8;
+    min-width: 100px;
+    margin-left: 120px;
+}
