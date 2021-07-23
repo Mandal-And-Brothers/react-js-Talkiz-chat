@@ -1,8 +1,10 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import "./../Thames/UserStyle.css";
+import DetailsIcon from '@material-ui/icons/Details';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import Chats from './Chats';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Friends from './Friends';
 import Profile from './Profile';
 import Setting from './Setting';
@@ -12,12 +14,31 @@ import { Link } from 'react-router-dom';
 import Login from './Login';
 import ErrorPage from './ErrorPage';
 import Add from './Add';
+import Axios from "axios";
+import Notification from './Notification';
 
 export const history = createBrowserHistory();
 
 const User = () => {
 
     const [check, setCheck] = useState(false);
+    const [notification, setNotification] = useState(null);
+
+    useEffect(() => {
+        let test = localStorage.getItem('Talkiz-id');
+        test = JSON.parse(test);
+        Axios.post("http://localhost:3055/check-request", {
+            uid: test,
+            read: 'no'
+        }).then((Responce) => {
+            if (Responce.data.length > 0) {
+                setNotification(Responce.data.length);
+            }
+            else {
+                setNotification(null);
+            }
+        });
+    });
 
     const out = () => {
         localStorage.removeItem('Talkiz-id');
@@ -49,13 +70,14 @@ const User = () => {
                                             <Link to="/friends" style={{ textDecoration: 'none' }}><li>Friends</li></Link>
                                             <Link to="/add-friends" style={{ textDecoration: 'none' }}><li>Add Friends</li></Link>
                                             <Link to="/massages" style={{ textDecoration: 'none' }}><li>Massages</li></Link>
-                                            <li>Notification</li>
+                                            <Link to="/notifications" style={{ textDecoration: 'none' }}><li>Notification<label style={{ color: "red", fontSize: 20 }}>{notification}</label></li></Link>
                                         </ul>
                                     </nav>
                                     <div className="header-profile">
+                                        <AccountCircleIcon className="pro-pic" />
                                     </div>
                                     <div className="dropdown">
-                                        <button style={{ height: 20, width: 25, textalign: 'left',cursor: 'pointer'  }} className="dropbtn">{'>'}</button>
+                                        <DetailsIcon style={{ height: 20, width: 25, textalign: 'left', cursor: 'pointer' }} className="dropbtn" />
                                         <div className="dropdown-content">
                                             <ul>
                                                 <Link to="/profile" style={{ textDecoration: 'none' }}><li>Profile</li></Link>
@@ -72,11 +94,12 @@ const User = () => {
                                 <Route path="/" exact component={Chats} />
                                 <Route path="/massages" exact component={Chats} />
                                 <Route path="/friends" component={Friends} />
-                                <Route path="/add-friends" component={Add}/>
+                                <Route path="/add-friends" component={Add} />
                                 <Route path="/profile" component={Profile} />
                                 <Route path="/Setting" component={Setting} />
                                 <Route path="/about" component={About} />
-                                <Route component={ErrorPage}/>
+                                <Route path="/notifications" component={Notification} />
+                                <Route component={ErrorPage} />
                             </Switch>
 
                         </div>
